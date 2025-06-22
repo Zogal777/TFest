@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sazinies ar TFest komandu">
+  <title>Kontakti</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="TFest logo" class="logo" loading="lazy" />
+    <nav>
+      <a href="index.html">Sākums</a>
+      <a href="contact.html">Kontakti</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Pārslēgt tēmu">Tēma</button>
+  </header>
+
+  <main>
+    <h2 style="text-align: center;">Sazinies ar mums</h2>
+    <form id="contact-form">
+      <label for="name">Vārds:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">E-pasts:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Ziņa:</label>
+      <div class="textarea-container">
+        <textarea id="message" name="message" maxlength="500" required></textarea>
+        <div id="char-count">500</div>
+      </div>
+
+      <button type="submit">Sūtīt</button>
+    </form>
+    <p id="form-message" class="success-message" hidden>Paldies! Ziņa nosūtīta.</p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> TFest</p>
+  </footer>
+</body>
+</html>

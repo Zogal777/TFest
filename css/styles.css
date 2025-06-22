@@ -1,0 +1,275 @@
+/* === СВЕТЛАЯ ТЕМА (по умолчанию) === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ffffff;
+    color: #111;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    height: 40px;
+    max-width: 120px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bold;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#theme-toggle {
+    background: #ddd;
+    border: none;
+    color: #111;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#theme-toggle:hover {
+    background: #bbb;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.album-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+}
+
+.album {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.album:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.album img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.album p {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #000;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    margin-top: auto;
+}
+
+form {
+    max-width: 480px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+form label {
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form textarea {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    resize: vertical; /* ✅ только по вертикали */
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #666;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(102, 102, 102, 0.2);
+}
+
+form button {
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    background-color: #ccc;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #aaa;
+}
+
+#char-count {
+    position: absolute;
+    bottom: 4px;
+    right: 8px;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* === ТЁМНАЯ ТЕМА === */
+.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-theme header,
+.dark-theme footer {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-theme nav a {
+    color: #ddd;
+}
+
+.dark-theme #theme-toggle {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme #theme-toggle:hover {
+    background-color: #555;
+}
+
+.dark-theme .album {
+    background-color: #333;
+    box-shadow: none;
+}
+
+.dark-theme .album p {
+    color: #fff;
+}
+
+.dark-theme form {
+    background-color: #1b1b1b;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.dark-theme form label {
+    color: #e0e0e0;
+}
+
+.dark-theme input,
+.dark-theme textarea {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #444;
+}
+
+.dark-theme input::placeholder,
+.dark-theme textarea::placeholder {
+    color: #999;
+}
+
+.dark-theme form button {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme form button:hover {
+    background-color: #555;
+}
+
+/* === АДАПТИВНОСТЬ === */
+@media (max-width: 768px) {
+    .album-list {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .logo {
+        height: 30px;
+        max-width: 100px;
+    }
+
+    #theme-toggle {
+        margin-top: 10px;
+    }
+}
+
+.cover {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 600px) {
+    .cover {
+        width: 80%;
+        height: auto;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="TFest Top 10 – Mūzikas topi un atskaņošana">
+  <title>TFest</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="TFest logo" class="logo" loading="lazy" />
+    <nav>
+      <a href="index.html">Sākums</a>
+      <a href="contact.html">Kontakti</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Pārslēgt tēmu">Tēma</button>
+  </header>
+
+  <main>
+    <h1 style="text-align: center;">TFest Top 10</h1>
+    <div class="album-list">
+      <div class="album" onclick="openPlayer(1)">
+        <img src="images/song1.webp" alt="Ламбада" loading="lazy" />
+        <p>Ламбада</p>
+      </div>
+      <div class="album" onclick="openPlayer(2)">
+        <img src="images/song2.webp" alt="Улети" loading="lazy" />
+        <p>Улети</p>
+      </div>
+      <div class="album" onclick="openPlayer(3)">
+        <img src="images/song3.webp" alt="Ни вчера не завтра" loading="lazy" />
+        <p>Ни вчера не завтра</p>
+      </div>
+      <div class="album" onclick="openPlayer(4)">
+        <img src="images/song4.webp" alt="Соври мне" loading="lazy" />
+        <p>Соври мне</p>
+      </div>
+      <div class="album" onclick="openPlayer(5)">
+        <img src="images/song5.webp" alt="Ты хочешь жить / Go Loco" loading="lazy" />
+        <p>Ты хочешь жить / Go Loco</p>
+      </div>
+      <div class="album" onclick="openPlayer(6)">
+        <img src="images/song6.webp" alt="Устал, беги" loading="lazy" />
+        <p>Устал, беги</p>
+      </div>
+      <div class="album" onclick="openPlayer(7)">
+        <img src="images/song7.webp" alt="Не помню" loading="lazy" />
+        <p>Не помню</p>
+      </div>
+      <div class="album" onclick="openPlayer(8)">
+        <img src="images/song8.webp" alt="Одно я знал_выдох" loading="lazy" />
+        <p>Одно я знал_выдох</p>
+      </div>
+      <div class="album" onclick="openPlayer(9)">
+        <img src="images/song9.webp" alt="Музыка пасла меня" loading="lazy" />
+        <p>Музыка пасла меня</p>
+      </div>
+      <div class="album" onclick="openPlayer(10)">
+        <img src="images/song10.webp" alt="Окно" loading="lazy" />
+        <p>Окно</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> TFest</p>
+  </footer>
+</body>
+</html>
