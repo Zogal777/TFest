@@ -58,3 +58,12 @@ const songs = {
   10: { title: "Окно", file: "audio/song10.mp3", cover: "images/song10.webp" },
 
 };
+
+const messageField = document.getElementById('message');
+
+if (messageField) {
+    messageField.addEventListener('input', () => {
+        messageField.style.height = 'auto';
+        messageField.style.height = messageField.scrollHeight + 'px';
+    });
+}

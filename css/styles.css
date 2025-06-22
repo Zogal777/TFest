@@ -1,4 +1,4 @@
-/* === СВЕТЛАЯ ТЕМА (по умолчанию) === */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -131,7 +131,7 @@ form textarea {
     border: 1px solid #ccc;
     border-radius: 8px;
     margin-bottom: 1.2rem;
-    resize: vertical; /* ✅ только по вертикали */
+    resize: vertical;
 }
 
 form input:focus,
@@ -163,7 +163,6 @@ form button:hover {
     color: #999;
 }
 
-/* === ТЁМНАЯ ТЕМА === */
 .dark-theme {
     background-color: #121212;
     color: #e0e0e0;
@@ -227,7 +226,6 @@ form button:hover {
     background-color: #555;
 }
 
-/* === АДАПТИВНОСТЬ === */
 @media (max-width: 768px) {
     .album-list {
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -272,4 +270,10 @@ form button:hover {
         width: 80%;
         height: auto;
     }
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+    transition: height 0.2s ease;
 }
