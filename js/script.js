@@ -46,16 +46,16 @@ function openPlayer(id) {
 }
 
 const songs = {
-  1: { title: "Ламбада", file: "audio/song1.mp3", cover: "images/song1.webp" },
-  2: { title: "Улети", file: "audio/song2.mp3", cover: "images/song2.webp" },
-  3: { title: "Ни вчера не завтра", file: "audio/song3.mp3", cover: "images/song3.webp" },
-  4: { title: "Соври мне", file: "audio/song4.mp3", cover: "images/song4.webp" },
-  5: { title: "Ты хочешь жить / Go Loco", file: "audio/song5.mp3", cover: "images/song5.webp" },
-  6: { title: "Устал, беги", file: "audio/song6.mp3", cover: "images/song6.webp" },
-  7: { title: "Не помню", file: "audio/song7.mp3", cover: "images/song7.webp" },
-  8: { title: "Одно я знал_выдох", file: "audio/song8.mp3", cover: "images/song8.webp" },
-  9: { title: "Музыка пасла меня", file: "audio/song9.mp3", cover: "images/song9.webp" },
-  10: { title: "Окно", file: "audio/song10.mp3", cover: "images/song10.webp" },
+  1: { title: "Ламбада", file: "song1.mp3", cover: "images/song1.webp" },
+  2: { title: "Улети", file: "song2.mp3", cover: "images/song2.webp" },
+  3: { title: "Ни вчера не завтра", file: "song3.mp3", cover: "images/song3.webp" },
+  4: { title: "Соври мне", file: "song4.mp3", cover: "images/song4.webp" },
+  5: { title: "Ты хочешь жить / Go Loco", file: "song5.mp3", cover: "images/song5.webp" },
+  6: { title: "Устал, беги", file: "song6.mp3", cover: "images/song6.webp" },
+  7: { title: "Не помню", file: "song7.mp3", cover: "images/song7.webp" },
+  8: { title: "Одно я знал_выдох", file: "song8.mp3", cover: "images/song8.webp" },
+  9: { title: "Музыка пасла меня", file: "song9.mp3", cover: "images/song9.webp" },
+  10: { title: "Окно", file: "song10.mp3", cover: "images/song10.webp" },
 
 };
 
